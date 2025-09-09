@@ -12,7 +12,7 @@ public class AnagramCheck {
         Arrays.sort(b1);
         Arrays.sort(b2);
 
-        //System.out.println(Arrays.equals(b1, b2)); // true
-        System.out.println(Arrays.toString(b2));
+        System.out.println(Arrays.equals(b1, b2)); // true or false
+
     }
 }
