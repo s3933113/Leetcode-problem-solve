@@ -1,0 +1,12 @@
+def twosum (nums: list[int], target: int) -> list[int]:
+	checked = {} 
+	for i, num in enumerate((nums)): 
+		result = target - num 
+		if result in checked:
+			return [checked[result], i]
+		checked[num] = i
+	return []
+
+if __name__ == "__main__":
+	sample = [1,2,3,4,5]
+	print(twosum(sample, 9))
